@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Components.WebView.Maui;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Maui;
 using Microsoft.Maui.Platform;
+using TestApp.Data;
 using VijayAnand.MauiBlazor.Markup;
 using static Microsoft.Maui.Dispatching.Dispatcher;
 
@@ -20,6 +21,7 @@ namespace TestApp
 			var services = new ServiceCollection();
 			services.AddSingleton(GetForCurrentThread()!);
 			services.AddMauiBlazorWebView();
+			services.AddSingleton<WeatherForecastService>();
 #if DEBUG
 			services.AddBlazorWebViewDeveloperTools();
 #endif
