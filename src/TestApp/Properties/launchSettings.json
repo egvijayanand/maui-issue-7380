@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "TestApp (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "TestApp (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
